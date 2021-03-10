@@ -922,6 +922,7 @@ class Terminal extends Component {
         <Base
           className="terminal-base"
           fullscreen={this.state.maximise}
+          height={this.props.height}
         >
           {this.getAppContent()}
         </Base>

@@ -3,9 +3,7 @@ import styled, { keyframes } from 'styled-components';
 export const Base = styled.div`
   width: 100%;
   max-width: ${props => (props.fullscreen ? '100%' : '600px')};
-  height: ${props => (props.fullscreen ? '100%' : '630px')};
-  min-height: 630px;
-  max-height: 100vh;
+  height: ${props => (props.fullscreen ? '100%' : props.height ? props.height : '630px')};
   text-align: initial;
 `;
 

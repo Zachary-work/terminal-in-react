@@ -19,6 +19,7 @@ const withWrapper = child => () => (<TerminalWrapper>{child}</TerminalWrapper>);
 
 storiesOf('Terminal', module)
   .add('basic', withWrapper(<Terminal
+    height="200px"
     msg="Hi everyone! This is a terminal component for React"
     commands={{ website: () => 'website', intro: () => 'My name is Foo!' }}
     descriptions={{ website: 'My website', intro: 'My introduction' }}

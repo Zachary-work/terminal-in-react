@@ -19,6 +19,7 @@ export const descriptionsPropType = PropTypes.objectOf(PropTypes.oneOfType([
 
 export const TerminalPropTypes = {
   startState: PropTypes.oneOf(['minimised', 'maximised', 'open', 'closed']),
+  height: PropTypes.string,
   showActions: PropTypes.bool,
   hideTopBar: PropTypes.bool,
   allowTabs: PropTypes.bool,
